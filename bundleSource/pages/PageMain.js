@@ -3,11 +3,21 @@ import {
     Platform,
     StyleSheet,
     Text,
-    View
+    View,
+    Alert
 } from 'react-native';
 
-
-export default class App extends Component{
+export default class PageMain extends Component{
+    componentDidMount(){
+        Alert.alert(
+            'title',
+            'test',
+            [
+                {text: '知道了', onPress: () => {}},
+            ],
+            { cancelable: false }
+        )
+    }
     render() {
         return (
             <View>
