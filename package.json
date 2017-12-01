@@ -10,6 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "react": "^16.2.0",
-    "react-native": "^0.50.4"
+    "react-native": "^0.50.4",
+    "react-native-scrollable-tab-view": "^0.8.0",
+    "react-native-tab-navigator": "^0.3.4",
+    "react-native-vector-icons": "^4.4.2"
   }
 }
