@@ -4,26 +4,39 @@ import {
     StyleSheet,
     Text,
     View,
-    Alert
+    Alert,
+    TouchableHighlight
 } from 'react-native';
 
+import Util from "../common/Util";
+import DpFactory from "../common/DpFactory";
+let Dp = DpFactory.getDp();
+
 export default class PageMain extends Component{
-    componentDidMount(){
-        Alert.alert(
-            'title',
-            'test',
-            [
-                {text: '知道了', onPress: () => {}},
-            ],
-            { cancelable: false }
-        )
+    constructor(props){
+        super(props);
+        this.state = {
+            dpcontent:"space"
+        };
     }
+
+    componentDidMount(){
+    }
+
+    _handleClick(){
+        this.setState({
+            dpcontent:"111"
+        });
+    }
+
     render() {
         return (
             <View>
-                <Text>
-                    main page
-                </Text>
+                <TouchableHighlight onPress={() => {this._handleClick()}}>
+                    <Text>
+                        {this.state.dpcontent}
+                    </Text>
+                </TouchableHighlight>
             </View>
         );
     }
