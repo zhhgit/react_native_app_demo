@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
     Platform,
     StyleSheet,
@@ -16,23 +16,19 @@ export default class PageMain extends Component{
     constructor(props){
         super(props);
         this.state = {
-            dpcontent:"space"
+            dpcontent:Dp.dp36
         };
     }
 
-    componentDidMount(){
-    }
 
-    _handleClick(){
-        this.setState({
-            dpcontent:"111"
-        });
-    }
+    _handleClick = () => {
+
+    };
 
     render() {
         return (
             <View>
-                <TouchableHighlight onPress={() => {this._handleClick()}}>
+                <TouchableHighlight onPress={() => this._handleClick}>
                     <Text>
                         {this.state.dpcontent}
                     </Text>
@@ -43,4 +39,5 @@ export default class PageMain extends Component{
 }
 
 const styles = StyleSheet.create({
+
 });
