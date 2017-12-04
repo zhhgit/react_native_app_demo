@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import PageMain from './bundleSource/pages/PageMain';
+import PageHome from './bundleSource/pages/PageHome';
 
-AppRegistry.registerComponent('Test1', () => PageMain);
+AppRegistry.registerComponent('Test1', () => PageHome);
