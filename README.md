@@ -1,2 +1,2 @@
-# react_native_app_demo
-react_native_app_demo
+# react_native_demo_rn
+react_native_demo_rn，使用React Native做的完整APP Demo
